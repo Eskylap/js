@@ -5,6 +5,22 @@
     <title>Title</title>
 </head>
 <body>
-
+<input id="password" type="text">
+<input id="confirmPassword" type="text">
+<input id="btn" type="button" value="text">
 </body>
+<script>
+
+
+    var btn = document.getElementById('btn');
+    btn.onclick = function () {
+        var password = document.getElementById('password').value;
+        if (password.length >= 6) {
+            var confirmPassword = document.getElementById('confirmPassword').value;
+            if (confirmPassword === password) {
+                alert('верно456');
+            }
+        }
+    }
+</script>
 </html>
